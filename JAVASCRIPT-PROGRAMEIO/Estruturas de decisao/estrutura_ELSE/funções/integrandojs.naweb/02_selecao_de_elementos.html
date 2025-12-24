@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>02 - seleção de elementos</title>
+</head>
+<body>
+    <h1>Meu titulo principal</h1>
+    <h1>Meu outro titulo</h1>
+    <h2 class="sub-title">Meu subtitulo</h2>
+    <p id="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi vitae repudiandae rem, quos natus deleniti dolores aliquid repellendus placeat saepe nemo voluptas, accusantium excepturi assumenda harum asperiores accusamus reprehenderit numquam!</p>
+<script>
+    // ACESSANDO ELEMENTOS ESPECIFICOS DA PÁGINA 
+
+    console.log(document.getElementsByTagName('h1'));
+    
+    console.log(document.getElementsByClassName('sub-title'));
+// o id é único por isso é element e não elements
+    //console.log(document.getElementById('description'));//
+     // const é uma variavel constante
+     // o let podemos referenciar vários elementos
+    const description = document.getElementById('description');
+
+    console.log('description')
+
+</script>
+
+</body>
+</html>

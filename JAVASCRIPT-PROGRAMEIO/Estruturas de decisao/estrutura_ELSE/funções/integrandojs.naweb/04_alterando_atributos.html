@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>04 - ALTERANDO ATRIBUTOS</title>
+</head>
+
+<body>
+    // o value só tem no input.
+    // o placeholder é o que indica o que deve ser prenchido.
+    <h1 style="color: blueviolet;"  id="title">Meu formulario</h1>
+
+    <input  id="name"type="text" value="Izaura"/>
+    
+    <input id="email" type="text" value=""  placeholder="Seu Email"/>
+
+
+
+    <script>
+// o value - valor é alterado 
+// o value é especifico do input
+document.getElementById('name').value = 'Eu sou o Batman';;
+
+document.getElementById('email').value = 'eusouobatman.@gmail.com';
+
+// no style conseguimos manipular os valore ,as propriedades que o nosso style oferece
+document.getElementById('title').style.color='red';
+
+const email =document.getElementById('email');
+// '' - significa vazio 
+// se tiver algum valor fica verde se não fica vermelho;
+if(email.value ===''){
+    email.style.borderColor = 'red';
+} else{
+    email.style.borderColor = 'green';
+}
+    </script>
+</body>
+</html>

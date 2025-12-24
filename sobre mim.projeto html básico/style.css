@@ -1,0 +1,64 @@
+
+@font-face {
+    font-family: fontinha;
+    src: url(fontinha.ttf);
+
+}
+@font-face {
+    font-family: fonte;
+    src: url(Lobster-Regular.ttf);
+
+}
+.font-fontinha{
+
+    font-family:fontinha ;
+
+}
+
+
+
+
+
+h1{
+    color: rgb(18, 3, 58);
+    font-size: 20px;
+    
+}
+
+body{
+
+   background-color: rgb(224, 166, 166);
+
+}
+
+.button {
+
+    background-color: rgb(253, 122, 203);
+
+}
+.button:hover{
+
+    background-color: blueviolet;
+
+}
+
+#text{
+
+  color: crimson;
+
+}
+.fonte {
+
+font-family: fonte;
+
+}
+
+h4 {
+
+    font-size: 20px;
+    color: brown;
+
+
+}
+    
+

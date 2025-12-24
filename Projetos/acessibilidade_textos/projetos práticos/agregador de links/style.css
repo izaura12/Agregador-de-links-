@@ -1,0 +1,79 @@
+
+    body {
+      margin: 0;
+      font-family: 'Arial', sans-serif;
+      background: linear-gradient(to bottom, #b62a8c, #2a5298);
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+
+    div a {
+      display: block;         
+      margin: 10px auto;       
+      padding: 10px;           
+      width: 200px;            
+      text-align: center;     
+      border: 2px solid rgb(247, 247, 247); 
+      border-radius: 8px;     
+      text-decoration: none;   
+      color:rgb(144, 149, 170);   
+      box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3);       
+    }
+
+    
+    .foto-perfil {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid white;
+      box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3);
+    }
+
+    h1 {
+      margin: 15px 0 5px;
+      font-size: 24px;
+      text-shadow: 2px 2px 4px rgba(0,0,0, 0.5);
+    }
+
+    p.frase {
+      font-size: 16px;
+      margin-bottom: 30px;
+      font-style:italic;
+    }
+
+    .botao {
+      display: block;
+      margin: 10px auto;
+      padding: 15px 25px;
+      background-color: #ffffff;
+      color: #283f68;
+      text-decoration: none;
+      border-radius: 8px;
+      width: 80%;
+      max-width: 300px;
+      font-size: 16px;
+      transition: background-color 0.3s;
+    }
+
+    .botao:hover {
+      background-color: #e0e0e0;
+    }
+
+    .redes {
+      margin-top: 40px;
+    }
+
+    .icone {
+      margin: 0 10px;
+      font-size: 24px;
+      color: white;
+     text-decoration: none;
+    }
+    .icone:hover {
+        color: #ddd;
+    }
+     
+
+       

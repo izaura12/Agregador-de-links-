@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<title>Calculadora Simples</title>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body{
+        height: 110vh;
+        background-color: rgb(211, 116, 116);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: 'Gill Sans';
+    }
+    main{
+        width: 70%;
+        max-width: 300px;
+        background-color: #ffffff;
+        padding: 20px 10px;
+        text-align: center;
+        border-radius: 5px;
+        box-shadow: 5px 5px #23194d;
+    }
+    h1{
+        font-size:22px;
+        margin-bottom: 10px;
+    }
+    input {
+        width: 100%;
+        border: 1px solid #ccc;
+        padding: 5px 10px;
+        border-radius: 5px;
+        margin: 10px 0;
+        font-size: 16px;
+    }
+    .options-buttons {
+        display: flex;
+        gap: 5px;
+        margin-top: 10px;
+    }
+    button {
+        width: 100%;
+        background-color: #5D3FD3;
+        border: 1px solid #cccccc;
+        color: #ffffff;
+        padding: 5px;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+    }
+    button:hover {
+        background-color: #4a2fb0;
+    }
+    #result {
+        font-size: 30px;
+        font-weight: bold;
+        margin: 15px 0;
+        color: rgb(14, 1, 1);
+    }
+</style>
+</head>
+<body>
+
+<main>
+    <h1>Calculadora</h1>
+    <input type="number" id="first-number" placeholder="Primeiro número">
+    <input type="number" id="second-number" placeholder="Segundo número">
+
+    <div id="result">0</div>
+
+    <div class="options-buttons">
+        <button onclick="calculator('+')">+</button>
+        <button onclick="calculator('-')">-</button>
+        <button onclick="calculator('*')">x</button>
+        <button onclick="calculator('/')">÷</button>
+    </div>
+</main>
+
+<script>
+function calculator(operation) {
+    const firstNumber = Number(document.getElementById('first-number').value);
+    const secondNumber = Number(document.getElementById('second-number').value);
+    const resultDiv = document.getElementById('result');
+
+    // Validação de entrada
+    if (isNaN(firstNumber) || isNaN(secondNumber)) {
+        resultDiv.textContent = "Erro";
+        resultDiv.style.color = "red";
+        return;
+    }
+
+    let result;
+
+    switch (operation) {
+        case '+':
+            result = firstNumber + secondNumber;
+            break;
+        case '-':
+            result = firstNumber - secondNumber;
+            break;
+        case '*':
+            result = firstNumber * secondNumber;
+            break;
+        case '/':
+            if (secondNumber === 0) {
+                resultDiv.textContent = "Divisão por 0!";
+                resultDiv.style.color = "red";
+                return;
+            }
+            result = firstNumber / secondNumber;
+            break;
+        default:
+            resultDiv.textContent = "Operação inválida";
+            resultDiv.style.color = "red";
+            return;
+    }
+
+    // Exibir resultado
+    resultDiv.textContent = result;
+    resultDiv.style.color = "orchid";
+}
+</script>
+
+</body>
+</html>
+
+

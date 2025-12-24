@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> 03 -  ALTERANDO CONTEÚDO</title>
+</head>
+<body>
+  
+    <h1 id="title">Meu tituloTOP!</h1>
+    
+    <ul id="list">
+        <li id="iten">Meu item legal</li>
+    </ul>
+
+    <div id="meuElemento">Olá Mundo</div>
+
+
+    <script>
+      
+      const elemento = document.getElementById('meuElemento');
+      // podemos usar o alerta tbm : alert(elemento.innerText)
+      console.log(elemento.innerText);
+      // o inner é para pegar o texto interno do que tem em determinado elemento.
+// ou seja a pena o conteúdo em de aparecer por exemplo: <h1 id="title">Meu tituloTOP!</h1>
+// aparece só : Meu tituloTOP! - ou seja o conteúdo 
+
+const list =document.getElementById('list');
+console.log(list.innerHTML);
+// tem como fazer o js - java script colocar textos do que eu quiser por exemplo dentro do titulo.
+
+const title = documentgetById('title');
+ title.innerText = 'Meu titulo está mais TOP';
+
+ const lista = document.getElementById('list');
+ lista.innerHTML = '<li>Meu item ta diferente<li>';
+
+
+    </script>
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funções para alterar conteúdo</title>
+</head>
+<body>
+    <div id="meuElement">
+       <p>Olá Mundo</p>
+    </div>
+
+
+    <script>
+       const element = document.getElementById('meuElement');
+       console.log(elemet.innerHTML);
+
+    </script>
+
+</body>
+</html>
